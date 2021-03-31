@@ -105,7 +105,7 @@ func uaPool() ([]string, int) {
 }
 
 //RandUa is a sampler and randomly returns a disguised user agent
-func RandUa() string {
+func RandomUserAgent() string {
 	ua, length := uaPool()
 	// Intn returns, as an int, a non-negative pseudo-random number in [0,n)
 	return ua[rand.Intn(length)]

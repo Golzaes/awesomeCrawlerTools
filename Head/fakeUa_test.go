@@ -7,6 +7,6 @@ import (
 
 func TestRandUa(t *testing.T) {
 	for i := 0; i < 100; i++ {
-		fmt.Println(RandUa())
+		fmt.Println(RandomUserAgent())
 	}
 }

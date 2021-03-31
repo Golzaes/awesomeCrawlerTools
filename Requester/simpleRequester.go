@@ -19,7 +19,7 @@ func SimpleFetch(method, url string) ([]byte, error) {
 	if err != nil {
 		return nil, fmt.Errorf(`NewRequest Error:%#v`, err)
 	}
-	req.Header.Add(`User-Agent`, Head.RandUa())
+	req.Header.Add(`User-Agent`, Head.RandomUserAgent())
 	res, err := client.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf(` Client Error:%#v`, err)
