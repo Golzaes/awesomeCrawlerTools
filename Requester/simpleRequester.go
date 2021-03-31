@@ -10,7 +10,10 @@ import (
 	"net/http"
 )
 
-func Fetch(method, url string) ([]byte, error) {
+// SimpleFetch is Network requester, It relies on net / HTTP packets to send network requests
+// * fake User Agent
+// * AutoEncode
+func SimpleFetch(method, url string) ([]byte, error) {
 	client := &http.Client{}
 	req, err := http.NewRequest(method, url, nil)
 	if err != nil {

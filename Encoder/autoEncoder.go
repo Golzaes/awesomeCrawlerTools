@@ -8,7 +8,8 @@ import (
 	"log"
 )
 
-// DetectionEncode 检测网页编码，实现自动解码
+// DetectionEncode is a Code detector
+// It will read 1024 bytes to implement coding detection
 func DetectionEncode(r *bufio.Reader) encoding.Encoding {
 	bytes, err := r.Peek(1024)
 	if err != nil {

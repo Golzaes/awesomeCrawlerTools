@@ -2,6 +2,8 @@ package Head
 
 import "math/rand"
 
+// uaPool is store ua function,when transfer uaPoo,
+// while return a string slice and length
 func uaPool() ([]string, int) {
 	ua := []string{
 		"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.163 Safari/535.1",
@@ -102,6 +104,7 @@ func uaPool() ([]string, int) {
 	return ua, len(ua)
 }
 
+//RandUa is a sampler and randomly returns a disguised user agent
 func RandUa() string {
 	ua, length := uaPool()
 	// Intn returns, as an int, a non-negative pseudo-random number in [0,n)
