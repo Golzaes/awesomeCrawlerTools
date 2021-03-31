@@ -28,7 +28,7 @@ import (
 )
 
 func main() {
-	fmt.Println(Head.RandUa())
+	fmt.Println(Head.RandomUserAgent())
 	// output
 	// Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/532.9 (KHTML, like Gecko) Chrome/5.0.310.0 Safari/532.9
 }
